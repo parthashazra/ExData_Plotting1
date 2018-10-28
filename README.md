@@ -112,3 +112,27 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+## Code Book
+
+Each of the R source file is self explanatory and can run from anyone's machine as long as they are using an internet connection.
+
+All 4 source files have 3 sections 
+
+STEP 1 - Download & Store data
+
+- Checks availability by download folder without changing any other content of the working directory. If directory is not available then create one.
+- Download the file from the URL, unzip the file and upload the contect in a data frame.
+
+STEP 2 - Subplot Data, Convert Date and Time & Delete unwanted Data to recover memory
+
+- Subset the original data frame and store the subset in the same data frame to free memory from the data which is not required.
+- Make necessary disctionary changes to reflect correct data type of each column
+- Introduce new column Time_Stamp
+
+STEP 3 - Generate and store the plot in file device
+
+- Generate the graph with Base plot
+- Store the data in a file device in .PNG format
+
+ 
+
